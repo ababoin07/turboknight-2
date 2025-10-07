@@ -88,7 +88,7 @@ It aims to push the limits of what’s possible in a visual programming environm
 
 | Environment | Status |
 |--------------|--------|
-| **Scratch 3** | ✅ Supported |
+| **Scratch 3** | ✅ Supported (no turbowarp-ionly blocks) |
 | **TurboWarp** | ✅ Optimized |
 | **Delta-CI** | ⚙️ Planned (no GUI mode) |
 
