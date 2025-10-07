@@ -23,7 +23,7 @@ This is my latest chess engine built with **Scratch 3 / TurboWarp**.
 - Added ZWP
 - Changed move ordering to SEE
 
-## vb16
+### vb16
 - Corrected bugs with the king_in_check function
 - Made better the LMR
 - Added extensions
