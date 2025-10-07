@@ -35,7 +35,11 @@ This is my latest chess engine built with **Scratch 3 / TurboWarp**.
 
 ## TODO List
 - [x] Generate LUT data dynamically instead of storing it in the file
-- [ ] Add pruning techniques
+- Add pruning techniques:
+    - [ ] Delta pruning
+    - [ ] NMP
+    - [ ] Futility pruning
+    - [ ] Extended Futility pruning
 - [ ] Optimize the search
 - [ ] Reformat the code
 - [ ] Remove the GUI to make it **only Delta-CI compatible**  
