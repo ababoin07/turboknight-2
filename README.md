@@ -31,6 +31,8 @@ This is my latest chess engine built with **Scratch 3 / TurboWarp**.
 - Corrected 1 major bug with LMR
 - Made the move_ordering better
 - Changed mate detection, switched to a more legal moves generation
+- Added dynamic LUT generation in the code
+- Deleted ZWP
 ---
 
 ## TODO List
@@ -40,8 +42,15 @@ This is my latest chess engine built with **Scratch 3 / TurboWarp**.
     - [ ] NMP
     - [ ] Futility pruning
     - [ ] Extended Futility pruning
-- [ ] Optimize the search
+    - [ ] ZWP (well, for now, it makes my engine slower, so it doesn't have that yet, but I alr implemented it and deleted it, but it wasn't broken)
+- [ ] Optimize the NPS
+- Making the static-eval (incremential) better:
+    - [x] Fully incremential PST based evaluation
+    - [ ] Pawns eval structure
+    - [ ] King safety
+    - [ ] Attacks (like if an enemy Queen is really near of the King
 - [ ] Reformat the code
-- [ ] Remove the GUI to make it **only Delta-CI compatible**  
+- [ ] Remove the GUI to make it **only Delta-CI compatible**
+- [ ] Transposition Tables
   [Delta-CI Documentation](https://docs.google.com/document/d/e/2PACX-1vQuWSlPVzfDhs6o3BhqsxKca4reQpYfBA2KMwLsBchDxLd6fbQCNl_PUJmqV9w_YPZmLdfGp5teI1GZ/pub)
 
