@@ -88,7 +88,7 @@ It aims to push the limits of what’s possible in a visual programming environm
 
 | Environment | Status |
 |--------------|--------|
-| **Scratch 3** | ✅ Supported (no turbowarp-ionly blocks) |
+| **Scratch 3** | ✅ Supported (no turbowarp-only blocks) |
 | **TurboWarp** | ✅ Optimized |
 | **Delta-CI** | ⚙️ Planned (no GUI mode) |
 
@@ -101,7 +101,7 @@ It aims to push the limits of what’s possible in a visual programming environm
 - **Evaluation tables:** [Pesto’s tables](https://www.chessprogramming.org/Simplified_Evaluation_Function)
 - **Engine testing:** [Delta-CI](https://github.com/delta-ci)
 - **Inspired by:** Stockfish, Ethereal, PeSTO  
-- **Made with:** ❤️ & Scratch 3
+- **Made with:** Turbowarp desktop
 
 ---
 
