@@ -22,12 +22,22 @@ This is my latest chess engine built with **Scratch 3 / TurboWarp**.
 - Corrected LMR code (it wasn't re-searching if score > alpha for maximizing, or score < beta for minimizing), less depth, less blunders
 - Added ZWP
 - Changed move ordering to SEE
+
+## vb16
+- Corrected bugs with the king_in_check function
+- Made better the LMR
+- Added extensions
+- Corrected 2 major bugs with aspiration windows
+- Corrected 1 major bug with LMR
+- Made the move_ordering better
+- Changed mate detection, switched to a more legal moves generation
 ---
 
 ## TODO List
-- Generate LUT data dynamically instead of storing it in the file
-- Add pruning techniques
-- Optimize the search
-- Reformat the code
-- Remove the GUI to make it **only Delta-CI compatible**  
+- [x] Generate LUT data dynamically instead of storing it in the file
+- [ ] Add pruning techniques
+- [ ] Optimize the search
+- [ ] Reformat the code
+- [ ] Remove the GUI to make it **only Delta-CI compatible**  
   [Delta-CI Documentation](https://docs.google.com/document/d/e/2PACX-1vQuWSlPVzfDhs6o3BhqsxKca4reQpYfBA2KMwLsBchDxLd6fbQCNl_PUJmqV9w_YPZmLdfGp5teI1GZ/pub)
+
