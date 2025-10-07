@@ -1,56 +1,108 @@
-# Welcome to the TurboKnight v2 Repository
+# ♞ TurboKnight v2
 
-This is my latest chess engine built with **Scratch 3 / TurboWarp**.
+**TurboKnight v2** is my latest chess engine, built with **Scratch 3 / TurboWarp**.  
+It aims to push the limits of what’s possible in a visual programming environment while implementing modern search and evaluation techniques.
 
-## Changelog
-
-### vb0: First version, features
-- Move generator based on LUT
-- Minimax search with alpha-beta pruning (pseudo-legal move generation, no known bugs)
-- Naive move ordering
-- Naive iterative deepening
-- Incremental evaluation (Pesto's table)
-- Basic LMR
-
-### vb1
-- Added game phase to incremental evaluation
-
-### vb2
-- Deleted 3-repetitions positions; it was really slow. I will re-implement it later; I have some ideas
-
-### vb3
-- Corrected LMR code (it wasn't re-searching if score > alpha for maximizing, or score < beta for minimizing), less depth, less blunders
-- Added ZWP
-- Changed move ordering to SEE
-
-### vb16
-- Corrected bugs with the king_in_check function
-- Made better the LMR
-- Added extensions
-- Corrected 2 major bugs with aspiration windows
-- Corrected 1 major bug with LMR
-- Made the move_ordering better
-- Changed mate detection, switched to a more legal moves generation
-- Added dynamic LUT generation in the code
-- Deleted ZWP
 ---
 
-## TODO List
-- [x] Generate LUT data dynamically instead of storing it in the file
-- Add pruning techniques:
-    - [ ] Delta pruning
-    - [ ] NMP
-    - [ ] Futility pruning
-    - [ ] Extended Futility pruning
-    - [ ] ZWP (well, for now, it makes my engine slower, so it doesn't have that yet, but I alr implemented it and deleted it, but it wasn't broken)
-- [ ] Optimize the NPS
-- Making the static-eval (incremential) better:
-    - [x] Fully incremential PST based evaluation
-    - [ ] Pawns eval structure
-    - [ ] King safety
-    - [ ] Attacks (like if an enemy Queen is really near of the King
-- [x] Reformat the code
-- [ ] Remove the GUI to make it **only Delta-CI compatible**
-- [ ] Transposition Tables
-  [Delta-CI Documentation](https://docs.google.com/document/d/e/2PACX-1vQuWSlPVzfDhs6o3BhqsxKca4reQpYfBA2KMwLsBchDxLd6fbQCNl_PUJmqV9w_YPZmLdfGp5teI1GZ/pub)
+## 📌 Table of Contents
+- [Features](#features)
+- [Changelog](#changelog)
+- [TODO / Roadmap](#todo--roadmap)
+- [Build & Compatibility](#build--compatibility)
+- [Credits & Links](#credits--links)
 
+---
+
+## ⚙️ Features
+
+- Move generation based on **LUT**
+- **Minimax search** with alpha–beta pruning
+- **Incremental PST evaluation** (based on Pesto’s tables)
+- **LMR** (Late Move Reductions)
+- **Aspiration windows**
+- **SEE** (Static Exchange Evaluation) move ordering
+- **Dynamic LUT generation** (no static tables)
+- Support for **Delta-CI** testing interface *(work in progress)*
+
+---
+
+## 🧾 Changelog
+
+### 🔸 vb0 – Initial Release
+- Move generator (LUT-based)
+- Minimax with alpha–beta pruning (pseudo-legal)
+- Naive move ordering and iterative deepening
+- Incremental eval (Pesto’s table)
+- Basic LMR
+
+### 🔸 vb1
+- Added game phase to incremental evaluation
+
+### 🔸 vb2
+- Removed 3-repetition detection (too slow)
+- Will be reimplemented later with new ideas
+
+### 🔸 vb3
+- Fixed LMR re-search logic (`score > alpha` / `< beta`)
+- Added ZWP (Zero-Window Pruning)
+- Improved move ordering (SEE)
+- More stable search
+
+### 🔸 vb16
+- Fixed bugs in `king_in_check`
+- Improved LMR and aspiration windows
+- Added search extensions
+- Switched to fully legal move generation
+- Added dynamic LUT generation
+- Removed ZWP (too slow)
+- General move ordering improvements
+
+---
+
+## ✅ TODO / Roadmap
+
+### 🔹 Search Improvements
+- [ ] Delta pruning  
+- [ ] Null Move Pruning (NMP)  
+- [ ] Futility pruning  
+- [ ] Extended futility pruning  
+- [ ] Re-add and optimize ZWP (currently slower)  
+- [ ] Transposition Tables  
+
+### 🔹 Evaluation
+- [x] Fully incremental PST-based evaluation  
+- [ ] Pawn structure evaluation  
+- [ ] King safety evaluation  
+- [ ] Attack / proximity evaluation (e.g. enemy queen near king)  
+
+### 🔹 Engine & Integration
+- [x] Generate LUT dynamically (instead of static file)  
+- [ ] Optimize NPS (nodes per second)  
+- [ ] Reformat and clean codebase  
+- [ ] Remove GUI — make it **Delta-CI compatible only**  
+
+---
+
+## 🧰 Build & Compatibility
+
+| Environment | Status |
+|--------------|--------|
+| **Scratch 3** | ✅ Supported |
+| **TurboWarp** | ✅ Optimized |
+| **Delta-CI** | ⚙️ Planned (no GUI mode) |
+
+📘 [Delta-CI Documentation](https://docs.google.com/document/d/e/2PACX-1vQuWSlPVzfDhs6o3BhqsxKca4reQpYfBA2KMwLsBchDxLd6fbQCNl_PUJmqV9w_YPZmLdfGp5teI1GZ/pub)
+
+---
+
+## 🙌 Credits & Links
+
+- **Evaluation tables:** [Pesto’s tables](https://www.chessprogramming.org/Simplified_Evaluation_Function)
+- **Engine testing:** [Delta-CI](https://github.com/delta-ci)
+- **Inspired by:** Stockfish, Ethereal, PeSTO  
+- **Made with:** ❤️ & Scratch 3
+
+---
+
+> “A chess engine written in blocks, but built like a real one.”
