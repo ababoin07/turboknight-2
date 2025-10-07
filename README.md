@@ -49,7 +49,7 @@ This is my latest chess engine built with **Scratch 3 / TurboWarp**.
     - [ ] Pawns eval structure
     - [ ] King safety
     - [ ] Attacks (like if an enemy Queen is really near of the King
-- [ ] Reformat the code
+- [x] Reformat the code
 - [ ] Remove the GUI to make it **only Delta-CI compatible**
 - [ ] Transposition Tables
   [Delta-CI Documentation](https://docs.google.com/document/d/e/2PACX-1vQuWSlPVzfDhs6o3BhqsxKca4reQpYfBA2KMwLsBchDxLd6fbQCNl_PUJmqV9w_YPZmLdfGp5teI1GZ/pub)
