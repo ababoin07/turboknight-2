@@ -99,8 +99,7 @@ It aims to push the limits of what’s possible in a visual programming environm
 ## 🙌 Credits & Links
 
 - **Evaluation tables:** [Pesto’s tables](https://www.chessprogramming.org/Simplified_Evaluation_Function)
-- **Engine testing:** [Delta-CI](https://github.com/delta-ci)
-- **Inspired by:** Stockfish, Ethereal, PeSTO  
+- **Inspired by:** Arnohu's scratch chess engine, and all other ones 
 - **Made with:** Turbowarp desktop
 
 ---
